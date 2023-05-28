@@ -1,11 +1,9 @@
 typedef InstanceCreator<T> = T Function();
 
 class DependencyInjector {
-  DependencyInjector();
-
   final _instanceMap = <Type, InstanceGenerator<Object>>{};
 
-  void addAll(Map<Type, InstanceGenerator<Object>> intace) =>
+  void registerAll(Map<Type, InstanceGenerator<Object>> intace) =>
       _instanceMap.addAll(intace);
 
   void register<T extends Object>(
@@ -28,6 +26,7 @@ class InstanceGenerator<T> {
   bool _isFirstGet = false;
 
   final InstanceCreator<T> _instanceCreator;
+
   InstanceGenerator(this._instanceCreator, bool isSingleton)
       : _isFirstGet = isSingleton;
 

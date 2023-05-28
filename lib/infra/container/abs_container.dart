@@ -3,15 +3,15 @@
 import 'package:mercadinho_dona_marry/infra/container/dependency_injectior/dependency_injector.dart';
 
 abstract class Container {
-  Map<Type, InstanceGenerator<Object>> _drivers;
+  final Map<Type, InstanceGenerator<Object>> _drivers;
   late DependencyInjector di;
-  Container(this._drivers){
+
+  Container(this._drivers) {
     initializer();
   }
 
-  DependencyInjector get initializer {
+  void initializer() {
     di = DependencyInjector();
-    di.addAll(_drivers);
-    return di;
+    di.registerAll(_drivers);
   }
 }

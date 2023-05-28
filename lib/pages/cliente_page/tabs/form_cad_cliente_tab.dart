@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mercadinho_dona_marry/controller/data/db_especialization/db_sqflite.dart';
+import 'package:mercadinho_dona_marry/infra/container/drivers/especialization_dirver/impl_drive_db_sqflite.dart';
 import 'package:mercadinho_dona_marry/util/extencions/string_extencions.dart';
 class FormCadastroClienteTabPage extends StatefulWidget {
   const FormCadastroClienteTabPage({Key? key}) : super(key: key);
@@ -55,7 +55,7 @@ class _FormCadastroClienteTabPageState extends State<FormCadastroClienteTabPage>
                 ElevatedButton(
                   onPressed: () {
                     _formKey.currentState!.validate();
-                    DB.instance.database;
+                    SQFliteDrive.instance.database;
                   },
                   child: const Text('Submit'),
                 )

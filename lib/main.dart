@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:mercadinho_dona_marry/controller/data/db_especialization/db_sqflite.dart';
+import 'package:mercadinho_dona_marry/infra/init_app/abs_Inicializa_app.dart';
 import 'package:mercadinho_dona_marry/infra/router/gerenciador_rotas.dart';
 import 'package:mercadinho_dona_marry/util/resources/theme/theme_app.dart';
 
 Future<void> main() async {
+  final containerInit = InicializaApp().containerPlatformInitialized;
 
+  print(containerInit);
   WidgetsFlutterBinding.ensureInitialized();
-  await DB.instance.database;
   runApp(const MyApp());
 }
 

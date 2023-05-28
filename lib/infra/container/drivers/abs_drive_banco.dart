@@ -2,9 +2,10 @@
 import 'package:mercadinho_dona_marry/infra/container/drivers/abs_dirver.dart';
 
 abstract class DriverBanco extends Driver {
-  DriverBanco() : super(TipoDriver.BANCO_SQL);
+  DriverBanco(TipificacaoPubDev tipoPub)
+      : super([TipoDriver.BANCO_SQL], [tipoPub]);
 
-  Future<dynamic> _initDataBase();
+  Future<dynamic> initDataBase();
   Future<dynamic> get database;
   execQuery(String sql, [List? params]);
 }

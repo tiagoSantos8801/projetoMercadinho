@@ -1,8 +1,8 @@
 // ignore_for_file: avoid_function_literals_in_foreach_calls
 
 import 'package:mercadinho_dona_marry/controller/data/schema_espacialization/schema_sqflite.dart';
-import 'package:mercadinho_dona_marry/infra/container/drivers/abs_dirver.dart';
-import 'package:mercadinho_dona_marry/infra/container/drivers/abs_drive_banco.dart';
+import 'package:mercadinho_dona_marry/infra/container/drivers/abs/abs_dirver.dart';
+import 'package:mercadinho_dona_marry/infra/container/drivers/abs/abs_drive_banco.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 

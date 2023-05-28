@@ -1,4 +1,4 @@
-import 'package:mercadinho_dona_marry/infra/container/drivers/abs_dirver.dart';
+import 'package:mercadinho_dona_marry/infra/container/drivers/abs/abs_dirver.dart';
 
 abstract class DriveCache extends Driver {
   DriveCache(TipificacaoPubDev tipoPub)

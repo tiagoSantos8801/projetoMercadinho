@@ -1,11 +1,11 @@
-import 'package:mercadinho_dona_marry/infra/container/drivers/abs_dirver.dart';
-import 'package:mercadinho_dona_marry/infra/container/drivers/abs_drive_cache.dart';
+import 'package:mercadinho_dona_marry/infra/container/drivers/abs/abs_dirver.dart';
+import 'package:mercadinho_dona_marry/infra/container/drivers/abs/abs_drive_cache.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class PreferenciasUsuarioCache extends DriveCache {
+class PreferenciasUsuarioCacheDrive extends DriveCache {
   late SharedPreferences prefs;
 
-  PreferenciasUsuarioCache()
+  PreferenciasUsuarioCacheDrive()
       : super(TipificacaoPubDev.shared_preferences);
 
   @override

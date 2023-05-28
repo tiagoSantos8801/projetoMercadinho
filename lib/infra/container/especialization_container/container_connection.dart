@@ -1,8 +1,7 @@
 import 'package:mercadinho_dona_marry/infra/container/abs_container.dart';
 import 'package:mercadinho_dona_marry/infra/container/dependency_injectior/dependency_injector.dart';
-import 'package:mercadinho_dona_marry/infra/container/drivers/abs/abs_drive_banco.dart';
 
-class ContainerBanco extends Container {
-  ContainerBanco(Map<Type, InstanceGenerator<DriverBanco>> drivers)
+class ContainerConnections extends Container {
+  ContainerConnections(Map<Type, InstanceGenerator<Object>> drivers)
       : super(drivers);
 }

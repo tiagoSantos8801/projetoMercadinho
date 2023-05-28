@@ -19,8 +19,6 @@ abstract class InicializaContainers {
     return containerIosImpl = IniciaContainerIosImpl();
   }
 
-
-
   @protected
   void containerBanco() {}
   @protected

@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:mercadinho_dona_marry/infra/container/drivers/abs_dirver.dart';
-import 'package:mercadinho_dona_marry/infra/container/drivers/abs_drive_connection.dart';
+import 'package:mercadinho_dona_marry/infra/container/drivers/abs/abs_dirver.dart';
+import 'package:mercadinho_dona_marry/infra/container/drivers/abs/abs_drive_connection.dart';
 import 'package:http/http.dart';
 
-class DriveConnectionImpl extends DriveConnection {
-  DriveConnectionImpl() : super(TipificacaoPubDev.http);
+class DriveConnectionHttpImpl extends DriveConnection {
+  DriveConnectionHttpImpl() : super(TipificacaoPubDev.http);
 
   @override
   Future<Response> get(Uri url, {Map<String, String>? headers}) {

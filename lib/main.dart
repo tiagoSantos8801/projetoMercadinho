@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mercadinho_dona_marry/infra/init_app/abs_Inicializa_app.dart';
+import 'package:mercadinho_dona_marry/infra/init_app/abs/abs_Inicializa_app.dart';
 import 'package:mercadinho_dona_marry/infra/router/gerenciador_rotas.dart';
 import 'package:mercadinho_dona_marry/util/resources/theme/theme_app.dart';
 
